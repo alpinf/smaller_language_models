@@ -77,9 +77,9 @@ When trimming the vocabulary, it's important to retain certain tokens that are e
 
 - **[UNK]**: represents any unknown token that is not in the tokenizer's vocabulary
 
-- **[CLS]**: a special token added at the beginning of every sequence and is used as as pooled representation for classification tasks
+- **[CLS]**: a special token added at the beginning of every sequence and is used as a pooled representation for classification tasks
 
-- **[SEP]**: separates different texts segments within a single input sequence
+- **[SEP]**: separates different text segments within a single input sequence
 
 In addition to these 4 tokens, BERT's tokenizer includes 99 unused tokens (`[unused1]`, `[unused2]`, ..., `[unused99]`). These tokens are placeholders that can be repurposed for custom vocabulary or specific tasks during fine-tuning, making them valuable for maintaining flexibility in the model.
 
