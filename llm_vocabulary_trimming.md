@@ -77,9 +77,9 @@ When trimming the vocabulary, it's important to retain certain tokens that are e
 
 - **[UNK]**: represents any unknown token that is not in the tokenizer's vocabulary
 
-- **[CLS]**: a special token added at the beginning of every sequence and is used as as pooled representation for classification tasks
+- **[CLS]**: a special token added at the beginning of every sequence and is used as a pooled representation for classification tasks
 
-- **[SEP]**: separates different texts segments within a single input sequence
+- **[SEP]**: separates different text segments within a single input sequence
 
 In addition to these 4 tokens, BERT's tokenizer includes 99 unused tokens (`[unused1]`, `[unused2]`, ..., `[unused99]`). These tokens are placeholders that can be repurposed for custom vocabulary or specific tasks during fine-tuning, making them valuable for maintaining flexibility in the model.
 
@@ -144,13 +144,14 @@ For a complete implementation of the process, refer to the notebooks linked belo
 1. **mBERT (Encoder Only)**  
    Vocabulary trimming can be applied to encoder-only models like mBERT, which is useful for tasks such as text classification and named entity recognition.
 
-   - [Notebook Demonstrating Vocabulary Trimming on mBERT](https://colab.research.google.com/github/alpinf/smaller_llms/blob/main/notebooks/vocab_trim_mBERT.ipynb)
+   - [Notebook Demonstrating Vocabulary Trimming on mBERT](https://colab.research.google.com/github/alpinf/smaller_language_models/blob/main/notebooks/vocab_trim_mBERT.ipynb)
 
 2. **mT5 (Encoder + Decoder)**  
    For models like mT5 that have both an encoder and a decoder, vocabulary trimming can reduce the size of both components, which is beneficial for tasks that require text generation in addition to understanding.
 
-   - [Notebook Demonstrating Vocabulary Trimming on mT5](https://colab.research.google.com/github/alpinf/smaller_llms/blob/main/notebooks/vocab_trim_mT5.ipynb)
+   - [Notebook Demonstrating Vocabulary Trimming on mT5](https://colab.research.google.com/github/alpinf/smaller_language_models/blob/main/notebooks/vocab_trim_mT5.ipynb)
 
 3. **mGPT (Decoder Only)**  
    Decoder-only models like mGPT can also benefit from vocabulary trimming, particularly for language generation tasks where only certain tokens are needed.
-   - [Notebook Demonstrating Vocabulary Trimming on mGPT](https://colab.research.google.com/github/alpinf/smaller_llms/blob/main/notebooks/vocab_trim_mGPT.ipynb)
+   
+   - [Notebook Demonstrating Vocabulary Trimming on mGPT](https://github.com/alpinf/smaller_language_models/blob/main/notebooks/vocab_trim_mGPT.ipynb)
